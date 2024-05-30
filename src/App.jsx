@@ -4,8 +4,10 @@ function App() {
   return (
     <>
       <div className="emoji">
-        <span className="eyes eye1"></span>
-        <span className="eyes eye2"></span>
+        <div className="eyes">
+          <span className="eye"></span>
+          <span className=" eye"></span>
+        </div>
       </div>
     </>
   );

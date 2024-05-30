@@ -1,6 +1,9 @@
 .emoji {
   height: 250px;
   width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: beige;
   border-radius: 50%;
   position: relative;
@@ -8,20 +11,29 @@
 }
 
 .eyes {
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: infinite rolling 6s;
+  transition: all 2s;
+}
+
+.eye {
   background-color: black;
-  height: 30px;
-  width: 20px;
+  height: 35px;
+  width: 25px;
+  border-radius: 25px;
 }
 
-.eye1 {
-  position: absolute;
-  top: 50px;
-  left: 35%;
-}
-
-.eye2 {
-  position: absolute;
-  top: 50px;
-  left: 55%;
+@keyframes rolling {
+  40% {
+    transform: translate(20px, 50px);
+  }
+  60% {
+    transform: translate(70px, -30px);
+  }
+  80% {
+    transform: translate(0px, 0px);
+  }
 }

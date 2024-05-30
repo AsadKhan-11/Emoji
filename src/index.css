@@ -6,4 +6,5 @@ body {
   width: 100vw;
   overflow: hidden;
   transform: translate(-50px, -50px);
+  background-color: rgb(159, 217, 240);
 }
