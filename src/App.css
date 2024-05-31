@@ -15,15 +15,17 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  animation: infinite rolling 6s;
-  transition: all 2s;
+  animation: infinite rolling 8s;
+  transition: all 0.5s;
 }
 
 .eye {
   background-color: black;
-  height: 35px;
+  height: 30px;
   width: 25px;
+  transition: all 0.5s;
   border-radius: 25px;
+  animation: infinite 8s blink;
 }
 
 @keyframes rolling {
@@ -35,5 +37,36 @@
   }
   80% {
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    height: 30px;
+    width: 25px;
+  }
+  15% {
+    height: 35px;
+    width: 20px;
+  }
+  20% {
+    height: 35px;
+    width: 20px;
+  }
+  60% {
+    height: 35px;
+    width: 20px;
+  }
+  70% {
+    height: 35px;
+    width: 25px;
+  }
+  85% {
+    height: 10px;
+    width: 25px;
+  }
+  100% {
+    height: 30px;
+    width: 25px;
   }
 }
